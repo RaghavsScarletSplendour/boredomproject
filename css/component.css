@@ -97,9 +97,9 @@
 
 .meta {
 	position: relative;
-/*	margin: 10px 0 0;
-	padding: 0 60px 0 0;
-*/	text-align: center;
+	margin: -25px 0 0;
+/*	padding: 0 60px 0 0;*/
+	text-align: center;
 }
 
 .meta__brand {
