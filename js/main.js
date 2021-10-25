@@ -75,7 +75,8 @@
 				wrapAround: true,
 				cellAlign: 'left',
 				contain: true,
-				resize: false
+				resize: false,
+				draggable: false
 			});
 
 			// store flickity instances

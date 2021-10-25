@@ -64,8 +64,8 @@
 }
 
 .no-touch .slider {
-	padding: 0 0 1.25em;
-}
+/*	padding: 0 0 1.25em;
+*/}
 
 .slider__item {
 	width: 100%;
@@ -78,6 +78,7 @@
 /* Flickity page dots */
 
 .slider .flickity-page-dots {
+	visibility: hidden;
 	bottom: 20px;
 	opacity: 0;
 	-webkit-transition: opacity .3s;
@@ -96,9 +97,9 @@
 
 .meta {
 	position: relative;
-	margin: 10px 0 0;
+/*	margin: 10px 0 0;
 	padding: 0 60px 0 0;
-	text-align: left;
+*/	text-align: center;
 }
 
 .meta__brand {
@@ -112,8 +113,8 @@
 	font-size: .95em;
 	font-weight: bold;
 	margin: 0;
-	padding: .4em 0 .1em;
-}
+/*	padding: .4em 0 .1em;
+*/}
 
 .meta__price {
 	font-size: .95em;
@@ -230,6 +231,18 @@
 
 .filter__item .icon {
 	font-size: 1.75em;
+	display: none;
+}
+
+#ico1 {
+	display: none;
+}
+
+#ico2 {
+	display: none;
+}
+
+#ico3 {
 	display: none;
 }
 
@@ -380,8 +393,8 @@
 		padding: .5em 4.5em .5em 0;
 	}
 	.flexbox .filter {
-		-webkit-justify-content: space-around;
-		justify-content: space-around;
+		-webkit-justify-content: end;
+		justify-content: end;
 	}
 	.filter__item {
 		height: 100%;
@@ -389,6 +402,14 @@
 		border: none;
 	}
 	.filter__item .icon {
+		display: inline-block;
+	}
+	#ico1{
+		display: inline-block;
+	}
+	#ico2{
+		display: inline-block;
+	}#ico3{
 		display: inline-block;
 	}
 	.filter__label,
