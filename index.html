@@ -34,12 +34,13 @@
 	<link rel="icon" href="images/example.png"> -->
 
 </head>
-<body>
+<body onload="shuffleItUp()">
 	<!-- Bottom bar with filter and cart info -->
 	<div class="bar">
 		<div class="filter">
 			<span class="filter__label">Filter: </span>
 			<button class="action filter__item filter__item--selected" data-filter="*">All</button>
+			<button class="action filter__item" data-filter=".new"><img src="images/new.png" id="ico3" height="50px"></img><span class="action__text">New</span></button>
 			<button class="action filter__item" data-filter=".courses"><img src="images/8.png" id="ico1" height="50px"></img><span class="action__text"> Full Courses</span></button>
 			<button class="action filter__item" data-filter=".svidoes"><img src="images/9.png" id="ico2" height="50px"></img><span class="action__text">Short Videos</span></button>
 			<button class="action filter__item" data-filter=".articles"><img src="images/10.png" id="ico3" height="50px"></img><span class="action__text">Articles</span></button>
@@ -67,7 +68,8 @@
 			<!-- Grid sizer for a fluid Isotope (Masonry) layout -->
 			<div class="grid__sizer"></div>
 			<!-- Grid items -->
-			<div class="grid__item svidoes">
+			<div id="shuffle"> 
+			<div class="grid__item svidoes" id="act1" style="">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/gardening.html"><img src="images/garden.jpeg" alt="Dummy" style="border-radius: 20px " /></div>
 				</div>
@@ -79,7 +81,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes" id="act2" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/reading.html"><img src="images/reading.png"alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -91,7 +93,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes" id="act3" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/lofi.html"><img src="images/lofi.jpg" alt="Dummy" style="border-radius: 20px;" /></div>
 				</div>
@@ -103,7 +105,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item grid__item--size-a courses">
+			<div class="grid__item grid__item--size-a courses" id="act4" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/facerecog.html"><img src="images/facerecog.jpg" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -114,7 +116,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden"></span></button>
 			</div>
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes new" id="act5" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/brain.html"><img src="images/brain.jpg" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -128,7 +130,7 @@
 
 			
 			
-			<div class="grid__item grid__item--size-a courses">
+			<div class="grid__item grid__item--size-a courses" id="act6" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/python.html"><img src="images/python.jpg" alt="Dummy"style="border-radius: 20px;" /></div>
 				</div>
@@ -140,7 +142,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes" id="act7" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/cryptogames.html"><img src="images/cryptogames.jpg" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -152,7 +154,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes" id="act8" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/photoshop.html"><img src="images/photoshop.jpeg" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -164,7 +166,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item courses">
+			<div class="grid__item courses" id="act9" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/website.html"><img src="images/web.jpeg" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -176,7 +178,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes" id="act10" style="display: "";" >
 				<div class="slider">
 					<div class="slider__item"><a href="activities/sleepmed.html"><img src="images/sleepmed.png" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -188,7 +190,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item courses">
+			<div class="grid__item courses" id="act11" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/2dgame.html"><img src="images/2dgame.jpg" alt="Dummy"style="border-radius: 20px;" /></div>
 				</div>
@@ -200,7 +202,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item courses">
+			<div class="grid__item courses" id="act12" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/iosapp.html"><img src="images/iosapp.png" alt="Dummy"style="border-radius: 20px;" /></div>
 				</div>
@@ -211,7 +213,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes new" id="act13" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/language.html"><img src="images/language.jpg" alt="Dummy"style="border-radius: 20px;"/></div>
 				</div>
@@ -222,7 +224,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes" id="act14" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/tricking.html"><img src="images/tricking.jpg" alt="Dummy"style="border-radius: 20px;"/></div>
 				</div>
@@ -234,7 +236,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item svidoes articles">
+			<div class="grid__item svidoes articles" id="act15" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/nft.html"><img src="images/nft2.jpg" alt="Dummy" alt="Dummy"style="border-radius: 20px;"/></div>
 				</div>
@@ -246,7 +248,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden"></span></button>
 			</div>
 
-			<div class="grid__item grid__item--size-a svidoes">
+			<div class="grid__item grid__item--size-a svidoes" id="act16" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/algorithms.html"><img src="images/algorithms3.jpeg" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -258,7 +260,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes" id="act17" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/computers.html"><img src="images/computers.jpg" alt="Dummy" alt="Dummy"style="border-radius: 20px;"/></div>
 				</div>
@@ -270,7 +272,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden"></span></button>
 			</div>
 
-			<div class="grid__item courses">
+			<div class="grid__item courses" id="act18" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/ccode.html"><img src="images/ccode.png" alt="Dummy"alt="Dummy"style="border-radius: 20px;" /></div>
 				</div>
@@ -282,7 +284,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item courses">
+			<div class="grid__item courses new" id="act19" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/ai.html"><img src="images/ai.jpg" alt="Dummy"alt="Dummy"style="border-radius: 20px;"  /></div>
 				</div>
@@ -294,7 +296,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes" id="act20" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/boredom.html"><img src="images/boredom.jpg" alt="Dummy"style="border-radius: 20px;" /></div>
 				</div>
@@ -306,7 +308,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item svidoes articles">
+			<div class="grid__item svidoes articles" id="act21" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/bitcoin.html"><img src="images/bitcoin.jpg" alt="Dummy" style="border-radius: 20px;" /></div>
 				</div>
@@ -318,7 +320,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes" id="act22" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/origami.html"><img src="images/origami.png" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -330,7 +332,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes" id="act23" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/mzuck.html"><img src="images/facebook.png" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -342,7 +344,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item articles">
+			<div class="grid__item articles" id="act24" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/running.html"><img src="images/running.jpg" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -354,7 +356,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes" id="act25" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/techint.html"><img src="images/techint.png" alt="Dummy" style="border-radius: 20px;" /></div>
 				</div>
@@ -366,7 +368,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item grid__item--size-a svidoes">
+			<div class="grid__item grid__item--size-a svidoes" id="act26" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/rainmeter.html"><img src="images/rainmeter2.jpeg" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -378,7 +380,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item shoes">
+			<div class="grid__item shoes" id="act27" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/nothing.html"><img src="images/nothing.jpg" alt="Dummy" style="border-radius: 20px;"/></div>
 					<div class="slider__item"><img src="images/shoe.png" alt="Dummy" /></div>
@@ -392,7 +394,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes" id="act28" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/stretch.html"><img src="images/stretch.jpg" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -404,7 +406,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item svidoes articles">
+			<div class="grid__item svidoes articles" id="act29" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/flow.html"><img src="images/flow2.jpg" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -416,7 +418,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item courses">
+			<div class="grid__item courses" id="act30" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/freelance.html"><img src="images/freelance.png" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -428,7 +430,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item grid__item--size-a svidoes">
+			<div class="grid__item svidoes" id="act31" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/stoicism.html"><img src="images/stoicism.jpg" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -440,7 +442,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item articles">
+			<div class="grid__item articles" id="act32" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/netflix.html"><img src="images/netflix.jpg" alt="Dummy" style="border-radius: 20px;"/></div>
 					
@@ -453,7 +455,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes" id="act33" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/philosophy.html"><img src="images/philosophy.jpg" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -465,7 +467,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item courses">
+			<div class="grid__item courses" id="act34" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/hacking.html"><img src="images/hacking.jpg" alt="Dummy" style="border-radius: 20px;"/></div>
 					<div class="slider__item"><img src="images/trousers.png" alt="Dummy" /></div>
@@ -478,7 +480,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes" id="act35" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/cooking.html"><img src="images/cook.jpeg" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -490,7 +492,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 			
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes new" id="act36" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/fiction.html"><img src="images/fiction.jpg" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
@@ -502,7 +504,7 @@
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
-			<div class="grid__item svidoes">
+			<div class="grid__item svidoes new" id="act37" style="display: "";">
 				<div class="slider">
 					<div class="slider__item"><a href="activities/proc.html"><img src="images/proc.png" alt="Dummy" 
 						style="border-radius: 20px;"/></div>
@@ -514,32 +516,29 @@
 				</div>
 				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-			<!-- <div class="grid__item dresses">
+			<div class="grid__item svidoes new" id="act38" style="display: "";">
 				<div class="slider">
-					<div class="slider__item"><img src="images/dress.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/dress.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/dress.png" alt="Dummy" /></div>
+					<div class="slider__item"><a href="activities/calisthenics.html"><img src="images/calisthenics.jpg" alt="Dummy" style="border-radius: 20px;"/></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">Dummy Product</h3>
-					<span class="meta__brand">Dummy Brand</span>
-					<span class="meta__price">$99</span>
+					<h3 class="meta__title"></h3>
+					<span class="meta__brand">Calisthenics</span>
+					<span class="meta__price"></span>
 				</div>
-				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
-			</div> -->
-			<!-- <div class="grid__item trousers">
+				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden"></span></button>
+			</div>
+			<div class="grid__item trousers" id="act39" style="display: "";">
 				<div class="slider">
-					<div class="slider__item"><img src="images/trousers.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/trousers.png" alt="Dummy" /></div>
-					<div class="slider__item"><img src="images/trousers.png" alt="Dummy" /></div>
+					<div class="slider__item"><a href="activities/qrcode.html"><img src="images/trousers.png" alt="Dummy"style="border-radius: 20px;" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">Dummy Product</h3>
-					<span class="meta__brand">Dummy Brand</span>
-					<span class="meta__price">$99</span>
+					<h3 class="meta__title"></h3>
+					<span class="meta__brand">What are QR Codes</span>
+					<span class="meta__price"></span>
 				</div>
-				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden">Add to cart</span></button>
-			</div> -->
+				<button class="action action--button action--buy"><i class=""></i><span class="text-hidden"></span></button>
+			</div>
+		</div>
 			<!-- <div class="grid__item shoes">
 				<div class="slider">
 					<div class="slider__item"><img src="images/shoe.png" alt="Dummy" /></div>
@@ -570,8 +569,49 @@
 		<!-- /grid-->
 	</div>
 	<!-- /view -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="js/isotope.pkgd.min.js"></script>
 	<script src="js/flickity.pkgd.min.js"></script>
 	<script src="js/main.js"></script>
+	<script type="text/javascript">
+
+		function shuffle(array) {
+  let currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle...
+  while (currentIndex != 0) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
+		function shuffleItUp(){
+			// console.log("heyy");
+			// var array = ['act1','act2','act3','act4','act5','act6','act7','act8','act9','act10','act11','act12','act13','act14','act15','act16','act17','act18','act19','act20','act21','act22','act23','act24','act25','act26','act27','act28','act29','act30','act31','act32','act33','act34','act35','act36','act37','act38','act39'];
+			// array = shuffle(array);
+			// for (var i = 0; i < array.length; i++){
+			// 	var element = array[i];
+			// 	console.log(element);
+			// 	document.getElementById(element).style.display="";
+			// }
+		}
+
+		$(function () {
+    var parent = $("#shuffle");
+    console.log("heyy");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+});
+	</script>
 </body>
 </html>
