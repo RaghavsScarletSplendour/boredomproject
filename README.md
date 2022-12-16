@@ -1,14 +1,8 @@
 # The Boredom Project
 
-A responsive product grid layout with touch-friendly Flickity galleries and Isotope-powered filter functionality.
+A website made to solve your boredom! It has links to vidoes and courses from a plethora of different activities and sure to intrigue your interest. 
 
-[Article on Codrops](http://tympanus.net/codrops/?p=24206)
-
-[Demo](http://tympanus.net/Blueprints/FilterableProductGrid/)
-
-The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration.
-
-Check out all of our Blueprints [here](http://tympanus.net/codrops/category/blueprints/)
+[Demo](http://raghavbajoria.com/boredom/index.html)
 
 ## License
 
